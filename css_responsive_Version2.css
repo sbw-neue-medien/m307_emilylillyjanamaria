@@ -1,0 +1,92 @@
+/* ===================================
+   Responsive Design
+   =================================== */
+
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size-base: 13px;
+        --font-size-lg: 14px;
+        --font-size-xl: 18px;
+        --font-size-2xl: 24px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .navbar-menu {
+        width: 100%;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .navbar-menu a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-info {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    button,
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    th, td {
+        padding: var(--spacing-sm);
+        font-size: 12px;
+    }
+
+    main {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        flex-direction: column;
+        font-size: var(--font-size-lg);
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    .navbar,
+    button,
+    .btn,
+    .alert-close {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    table {
+        page-break-inside: avoid;
+    }
+}
