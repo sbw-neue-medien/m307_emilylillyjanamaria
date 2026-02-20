@@ -1,0 +1,37 @@
+
+name: ${PROJECT_NAME}
+networks:
+  default:
+    name: ${NETWORK_NAME}
+    driver: bridge
+
+services:
+  server:
+    container_name: ${PROJECT_NAME}-web
+    extra_hosts:
+      host.docker.internal: host-gateway  
+    build:
+      context: .
+    restart: no
+    ports: ["9080:80"]
+    volumes:
+      - ../htdocs/:/var/www/html
+      - ../logs/:/var/www/logs
+      - ./xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+
+  db:
+    container_name: ${PROJECT_NAME}-db
+
+    image: mariadb
+    volumes: ["./db/:/var/lib/mysql:Z"]
+    restart: no
+    ports: ["9306:3306"]
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIA_DB_PASSWORD}
+
+  adminer:
+    container_name: ${PROJECT_NAME}-adminer
+
+    image: adminer
+    restart: no
+    ports: ["9081:8080"]

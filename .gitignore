@@ -1,0 +1,4 @@
+/backup
+/logs
+/db
+*.code-workspace
