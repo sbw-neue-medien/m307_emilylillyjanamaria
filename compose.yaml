@@ -1,13 +1,13 @@
 
-name: ${PROJECT_NAME}
+name: ${MraJscEadLboM307}
 networks:
   default:
-    name: ${NETWORK_NAME}
+    name: ${MraJscEadLboM307}
     driver: bridge
 
 services:
   server:
-    container_name: ${PROJECT_NAME}-web
+    container_name: ${MraJscEadLboM307}-web
     extra_hosts:
       host.docker.internal: host-gateway  
     build:
@@ -20,17 +20,17 @@ services:
       - ./xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
 
   db:
-    container_name: ${PROJECT_NAME}-db
+    container_name: ${MraJscEadLboM307}-db
 
     image: mariadb
     volumes: ["./db/:/var/lib/mysql:Z"]
     restart: no
     ports: ["9306:3306"]
     environment:
-      MARIADB_ROOT_PASSWORD: ${MARIA_DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${HilfeLol2026!}
 
   adminer:
-    container_name: ${PROJECT_NAME}-adminer
+    container_name: ${MraJscEadLboM307}-adminer
 
     image: adminer
     restart: no
