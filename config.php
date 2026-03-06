@@ -10,10 +10,10 @@ ini_set('display_errors', 0);
 ini_set('log_errors', 1);
 
 // Konstanten
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'projektadmin');
+define('DB_HOST', 'db');
+define('DB_USER', 'MraJscEadLboM307');
+define('DB_PASS', 'HilfeLol2026!');
+define('DB_NAME', 'MraJscEadLboM307');
 define('APP_NAME', 'ProjektAdmin');
 define('APP_URL', 'http://localhost/projektadmin');
 

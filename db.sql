@@ -3,7 +3,7 @@
 -- BBK Modul 307
 -- ========================================
 
-CREATE DATABASE IF NOT EXISTS projektadmin 
+CREATE DATABASE IF NOT EXISTS MraJscEadLboM307
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE projektadmin;
