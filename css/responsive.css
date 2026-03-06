@@ -3,27 +3,19 @@
    =================================== */
 
 @media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 var(--spacing-lg);
-    }
-
     .grid-3 {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
     :root {
-        --font-size-base: 13px;
-        --font-size-lg: 15px;
-        --font-size-xl: 18px;
-        --font-size-2xl: 22px;
         --font-size-3xl: 26px;
+        --font-size-2xl: 22px;
+        --font-size-xl: 18px;
     }
 
-    .navbar {
-        padding: 0 var(--spacing-md);
-    }
+    .navbar { padding: 0 var(--spacing-md); }
 
     .navbar .container {
         flex-direction: column;
@@ -38,117 +30,40 @@
         gap: var(--spacing-sm);
     }
 
-    .navbar-menu a {
-        width: 100%;
-        text-align: center;
-    }
+    .navbar-menu a { width: 100%; text-align: center; }
 
-    .user-info {
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+    .user-info { width: 100%; justify-content: space-between; }
 
-    .form-row {
-        grid-template-columns: 1fr;
-    }
+    .grid-3 { grid-template-columns: 1fr 1fr; }
 
-    .grid-2,
-    .grid-3,
-    .grid-4 {
-        grid-template-columns: 1fr;
-    }
+    .form-row { grid-template-columns: 1fr; }
 
-    button,
-    .btn {
-        width: 100%;
-        justify-content: center;
-    }
+    .grid-2, .grid-4 { grid-template-columns: 1fr; }
 
-    .btn-small {
-        width: auto;
-    }
+    button, .btn { width: 100%; justify-content: center; }
+    .btn-small { width: auto; }
 
-    th, td {
-        padding: var(--spacing-sm) var(--spacing-md);
-        font-size: 12px;
-    }
+    th, td { padding: var(--spacing-sm) var(--spacing-md); font-size: 12px; }
 
-    main {
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
+    main { padding: var(--spacing-lg) var(--spacing-md); }
 
-    .form-section {
-        padding: var(--spacing-lg);
-    }
-
-    h1 { font-size: var(--font-size-2xl); }
-    h2 { font-size: var(--font-size-xl); }
+    .form-section { padding: var(--spacing-lg); }
 }
 
 @media screen and (max-width: 480px) {
-    .navbar-brand {
-        font-size: var(--font-size-base);
-    }
+    .grid-3 { grid-template-columns: 1fr; }
 
-    .container {
-        padding: 0 var(--spacing-md);
-    }
+    .container { padding: 0 var(--spacing-md); }
 
-    input,
-    select,
-    textarea {
-        font-size: 16px; /* Verhindert Zoom auf iOS */
-    }
+    input, select, textarea { font-size: 16px; }
 
-    .form-section {
-        padding: var(--spacing-md);
-        border-radius: var(--radius-sm);
-    }
-
-    .card {
-        border-radius: var(--radius-sm);
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    th {
-        font-size: 10px;
-        padding: var(--spacing-sm);
-    }
-
-    td {
-        padding: var(--spacing-sm);
-    }
+    .form-section { padding: var(--spacing-md); border-radius: var(--radius-sm); }
 }
 
 @media print {
-    .navbar,
-    button,
-    .btn,
-    .alert-close,
-    footer {
-        display: none;
-    }
-
-    body {
-        background: white;
-        font-size: 12px;
-    }
-
-    .card, .form-section {
-        box-shadow: none;
-        border: 1px solid #ccc;
-    }
-
-    table {
-        page-break-inside: avoid;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+    .navbar, button, .btn, .alert-close, footer { display: none; }
+    body { background: white; font-size: 12px; }
+    .card, .form-section { box-shadow: none; border: 1px solid #ccc; }
+    table { page-break-inside: avoid; }
+    a { color: inherit; }
 }

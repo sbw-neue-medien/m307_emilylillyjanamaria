@@ -25,7 +25,7 @@ $user = getCurrentUser();
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <span>🚀</span>
+                        <span>📊</span>
                         <span><?php echo APP_NAME; ?></span>
                     </div>
                     <div class="navbar-menu">
@@ -40,7 +40,7 @@ $user = getCurrentUser();
             <main>
                 <div class="container">
                     <div style="margin-bottom: var(--spacing-2xl);">
-                        <h1>👋 Willkommen, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</h1>
+                        <h1>Willkommen, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</h1>
                         <p style="color: var(--gray-color); margin-top: var(--spacing-md);">Wählen Sie eine Funktion aus, um zu beginnen.</p>
                     </div>
 
@@ -102,7 +102,7 @@ $user = getCurrentUser();
             </main>
 
             <footer>
-                <p>&copy; 2026 <?php echo APP_NAME; ?> | BBK Modul 307 - Interaktive Website mit Formularen entwickeln</p>
+                <p>&copy; 2026 <?php echo APP_NAME; ?> | BBK Modul 307 - Maria Jana Lily Emily</p>
             </footer>
         </div>
 

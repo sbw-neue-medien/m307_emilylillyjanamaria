@@ -182,7 +182,7 @@ try {
                                 $totalHours += $log['hours'];
                             ?>
                                 <tr>
-                                    <td><strong><?php echo App::formatDate($log['date']); ?></strong></td>
+                                    <td><strong><?php echo date('d.m.Y', strtotime($log['date'])); ?></strong></td>
                                     <td><?php echo htmlspecialchars($log['project_name']); ?></td>
                                     <td style="text-align: center; font-weight: bold;"><?php echo $log['hours']; ?>h</td>
                                     <td><?php echo htmlspecialchars(substr($log['description'], 0, 60)); ?></td>

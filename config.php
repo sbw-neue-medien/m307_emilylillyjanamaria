@@ -14,7 +14,7 @@ define('DB_HOST', 'db');              // Service-Name aus compose.yaml
 define('DB_USER', 'root');
 define('DB_PASS', 'HilfeLol2026!');   // MARIADB_ROOT_PASSWORD
 define('DB_NAME', 'm07_mrajsceadlbo');
-define('APP_NAME', 'ProjektAdmin');
+define('APP_NAME', 'Tuffe M307 Verwaltungseite');
 define('APP_URL', 'http://localhost:9080/projektadmin');  // Port 9080!
 
 // Session Sicherheit
