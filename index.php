@@ -1,9 +1,5 @@
 <?php
-/**
- * Login Page
- * BBK Modul 307 - Interaktive Website
- */
-
+ 
 require 'config.php';
 
 if (isLoggedIn()) {
