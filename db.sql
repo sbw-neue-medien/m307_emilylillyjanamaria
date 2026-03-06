@@ -1,15 +1,11 @@
--- ========================================
--- ProjektAdmin Database Schema
--- BBK Modul 307
--- ========================================
-
-CREATE DATABASE IF NOT EXISTS MraJscEadLboM307
+-- Active: 1772786506372@@127.0.0.1@3306@m07_mrajsceadlbo
+CREATE DATABASE IF NOT EXISTS m07_mrajsceadlbo 
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE projektadmin;
+USE m07_mrajsceadlbo;
 
 -- ========================================
--- Benutzer Tabelle
+-- Benutzer TabelleX
 -- ========================================
 CREATE TABLE IF NOT EXISTS users (
     id INT PRIMARY KEY AUTO_INCREMENT,
