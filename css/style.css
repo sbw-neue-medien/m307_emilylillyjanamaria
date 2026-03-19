@@ -578,7 +578,6 @@ tbody tr:hover { background: var(--primary-ultra-light); }
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #162820 0%, #1a7a4a 100%);
-    padding: var(--spacing-lg);
 }
 
 .login-container {
