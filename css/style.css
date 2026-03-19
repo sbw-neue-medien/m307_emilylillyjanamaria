@@ -584,7 +584,7 @@ tbody tr:hover { background: var(--primary-ultra-light); }
     padding: var(--spacing-2xl);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
-    width: 100%;
+    width: 40%;
     max-width: 420px;
     border-top: 3px solid var(--primary-color);
     animation: fadeInUp 0.4s ease both;
