@@ -565,3 +565,69 @@ tbody tr:hover { background: var(--primary-ultra-light); }
 .grid-3 .card:nth-child(3) { animation: fadeInUp 0.3s 0.14s ease both; }
 .grid-3 .card:nth-child(4) { animation: fadeInUp 0.3s 0.19s ease both; }
 .grid-3 .card:nth-child(5) { animation: fadeInUp 0.3s 0.24s ease both; }
+
+/* ===================================
+   Login Page
+   =================================== */
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #162820 0%, #1a7a4a 100%);
+    padding: var(--spacing-lg);
+}
+
+.login-container {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 420px;
+    border-top: 3px solid var(--primary-color);
+}
+
+.login-header { text-align: center; margin-bottom: var(--spacing-2xl); }
+
+.login-logo { font-size: 48px; margin-bottom: var(--spacing-md); }
+
+.login-title {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: var(--font-size-2xl);
+    color: var(--dark-color);
+    letter-spacing: -0.01em;
+}
+
+.login-subtitle {
+    color: var(--gray-color);
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.demo-box {
+    background: var(--primary-ultra-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-sm);
+    margin-top: var(--spacing-xl);
+    border-left: 3px solid var(--primary-color);
+}
+
+.demo-box h4 {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    color: var(--primary-dark);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+}
+
+.demo-box p {
+    font-size: var(--font-size-xs);
+    color: var(--primary-dark);
+    margin: 4px 0;
+    opacity: 0.85;
+}
