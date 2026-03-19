@@ -63,11 +63,11 @@ localhost:9306	external db connection (only needed for external access)
 ```
 ├── css/              # Styles
 ├── js/               # JavaScript
-├── includes/         # PHP Includes (DB, Auth)
+├── pages/         # PHP Includes (DB, Auth)
 ├── index.php         # Hauptseite
 ├── login.php
-├── registrieren.php
-├── projekt-erstellen.php
+├── dashboard.php
+├── logout.php
 ├── database.sql      # Datenbank
 ```
 
