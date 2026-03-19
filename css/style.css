@@ -581,40 +581,72 @@ tbody tr:hover { background: var(--primary-ultra-light); }
 
 .login-container {
     background: var(--white);
-    padding: var(--spacing-2xl);
+    padding: 40px 36px 32px;
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
-    width: 40%;
-    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 340px;
     border-top: 3px solid var(--primary-color);
     animation: fadeInUp 0.4s ease both;
 }
 
-.login-header { text-align: center; margin-bottom: var(--spacing-2xl); }
+.login-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
 
-.login-logo { font-size: 48px; margin-bottom: var(--spacing-md); }
+.login-logo {
+    font-size: 36px;
+    margin-bottom: 10px;
+    display: block;
+}
 
 .login-title {
     font-family: var(--font-heading);
     font-weight: 900;
-    font-size: var(--font-size-2xl);
+    font-size: 22px;
     color: var(--dark-color);
     letter-spacing: -0.01em;
 }
 
 .login-subtitle {
     color: var(--gray-color);
-    margin-top: var(--spacing-sm);
-    font-size: var(--font-size-sm);
-    letter-spacing: 0.04em;
+    margin-top: 4px;
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.login-form .form-group {
+    margin-bottom: 16px;
+}
+
+.login-form label {
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-color);
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    padding: 10px 14px;
+    font-size: var(--font-size-base);
+}
+
+.login-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+    padding: 11px;
+    margin-top: 8px;
+    font-size: var(--font-size-sm);
 }
 
 .demo-box {
     background: var(--primary-ultra-light);
-    padding: var(--spacing-lg);
+    padding: 14px 16px;
     border-radius: var(--radius-sm);
-    margin-top: var(--spacing-xl);
+    margin-top: 20px;
     border-left: 3px solid var(--primary-color);
 }
 
@@ -622,13 +654,14 @@ tbody tr:hover { background: var(--primary-ultra-light); }
     font-family: var(--font-heading);
     font-weight: 900;
     color: var(--primary-dark);
-    font-size: var(--font-size-base);
-    margin-bottom: var(--spacing-sm);
+    font-size: 12px;
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
 }
 
 .demo-box p {
     font-size: var(--font-size-xs);
     color: var(--primary-dark);
-    margin: 4px 0;
-    opacity: 0.85;
+    margin: 3px 0;
+    opacity: 0.8;
 }
