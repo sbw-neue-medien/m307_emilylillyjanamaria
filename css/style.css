@@ -571,6 +571,7 @@ tbody tr:hover { background: var(--primary-ultra-light); }
    =================================== */
 
 .login-wrapper {
+    padding: var(--spacing-xl);
     min-height: 100vh;
     width: 50%;
     display: flex;
