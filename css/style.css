@@ -587,6 +587,7 @@ tbody tr:hover { background: var(--primary-ultra-light); }
     width: 100%;
     max-width: 420px;
     border-top: 3px solid var(--primary-color);
+    animation: fadeInUp 0.4s ease both;
 }
 
 .login-header { text-align: center; margin-bottom: var(--spacing-2xl); }
