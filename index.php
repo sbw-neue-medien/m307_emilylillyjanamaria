@@ -59,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #162820 0%, #1a7a4a 100%);
         }
         .login-container {
             background: white;
@@ -112,7 +111,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
 
                 <div class="demo-box">
-                    <h4>📋 Demo Zugangsdaten:</h4>
                     <p><strong>Admin:</strong> admin / password123</p>
                     <p><strong>Leiter:</strong> lp1 / password123</p>
                     <p><strong>Benutzer:</strong> user1 / password123</p>
